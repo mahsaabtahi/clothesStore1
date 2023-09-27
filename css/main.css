@@ -70,7 +70,7 @@ html {
     width: inherit;
     height: inherit;
     animation: slideshow 20s linear infinite; }
-    .slideshow-slide-img {
+    .slideshow-slide img {
       width: inherit;
       height: inherit;
       object-fit: cover; }
