@@ -6,6 +6,12 @@
 
 html {
     font-size: 62.5%;
+    @include response(md){
+        font-size: 56.2%;
+    }
+    @include response(sm){
+        font-size: 50%;
+    }
 }
 .container{
     display: grid;

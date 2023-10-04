@@ -5,6 +5,9 @@
     @include flexPosition(space-around);
     padding: 5rem 0;
     border-top: .1rem solid color(primary);
+    @include response(lg){
+       flex-wrap: wrap
+    }
 }
 .footer-nav{
     @include footerList;
@@ -13,19 +16,32 @@
     @include footerList;
 }
 .contact{
+    @include response(lg){
+        padding: 0 10rem;
+        order: 1;
+        margin-top: 4rem;
+    }
     &-heading{
         font-size: font(xl);
         color: color(primary);
         text-align: center;
+        @include response(md){
+           font-size: font(lg);
+        }
+
     }
     &-paragraph{
         font-size: font(lg);
         margin: 1rem 0;
         text-align: center;
+        @include response(md){
+            font-size: font(md);
+         }
 
     }
     .inputs-group{
         display: flex;
+        justify-content: center;
         input{
             padding:1rem ;
             font-size: font(xs);
@@ -74,8 +90,15 @@
           border: 0.1rem solid color(primary);
           border-radius:100% ;
           @include flexPosition;
+          @include response(sm){
+            width: 3rem;
+            height: 3rem;
+          }
           i{
               font-size: font(md);
+              @include response(sm){
+                font-size: font(sm);
+              
           }
 
         }
